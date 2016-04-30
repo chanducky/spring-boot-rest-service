@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<title>VT Pay</title>
+</head>
+<body>
+	<h1 style="margin-top: 20px;" align="center">Veritrans Payment
+		Gateway Service</h1>
+	<div style="margin-top: 50px;" class="space-top-10"></div>
+
+	<div align="center" >
+		<h3>
+			1 : <a href="/vtpay/api/count">Total No of Service </a>
+		</h3>
+
+		<h3>
+			2 : <a href="/vtpay/api/list">All Services </a>
+		</h3>
+		<form action="/vtpay/api/search">
+			<h3>3 : Search Services</h3>
+			<input type="text" placeholder=" Search by service name " name="name" />
+			<button type="submit">Search</button>
+		</form>
+	</div>
+</body>
+</html>
